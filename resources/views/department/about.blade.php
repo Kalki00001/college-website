@@ -87,7 +87,7 @@
                 <div class="flex items-center">
                     <div class="w-1/2 pr-8 text-right">
                         <div class="bg-blue-600 text-white p-6 rounded-lg">
-                            <h3 class="text-xl font-semibold mb-2">1985</h3>
+                            <h3 class="text-xl font-semisbold mb-2">1985</h3>
                             <p class="text-blue-100">Department established with initial batch of 30 students</p>
                         </div>
                     </div>

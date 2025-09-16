@@ -37,7 +37,7 @@
         }
 
         h1,h2,h3,h4,h5,h6 {
-        color: #aaaaf0b3;}
+        color: #080808b3;}
 
         .nav-link::after {
             content: '';
@@ -69,20 +69,21 @@
     </div>
 
     <!-- Header -->
-    <header class="bg-gradient-to-r from-blue-400 to-palepink-600 shadow-lg py-1 md:py-4">  <!-- sticky top-0 z-50 -->
+            <header class="bg-gradient-to-r from-blue-400 to-palepink-600 shadow-lg py-1 md:py-4">  <!-- sticky top-0 z-50 -->
 
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-                <!-- Logo -->
-<div class="flex items-center">
-    <a href="{{ route('department.index') }}" class="flex items-center space-x-3">
-        <img src="{{ asset('images/logo new.png') }}" alt="College Logo" class="h-12 w-auto rounded-lg shadow">
-        <div>
-            <span class="block text-lg font-bold leading-tight" style="color: #343232dd;">Department of Data science</span>
-            <span class="block text-xs text-black-500" style="color: #050505ff;">Excellence in Education &amp; Research</span>
+
+            <!-- Logo -->
+            <div class="flex items-center">
+                <a href="{{ route('department.index') }}" class="flex items-center space-x-3">
+                <img src="{{ asset('images/logo new.png') }}" alt="College Logo" class="h-12 w-auto rounded-lg shadow">
+            <div>
+                <span class="block text-lg font-bold leading-tight" style="color: #343232dd;">Department of Data science</span>
+                <span class="block text-xs text-black-500" style="color: #050505ff;">Excellence in Education &amp; Research</span>
+            </div>
+            </a>
         </div>
-    </a>
-</div>
 
                 <!-- Desktop Navigation -->
                 <nav class="hidden md:flex space-x-8">
@@ -156,10 +157,10 @@
                 <div class="col-span-1 md:col-span-2">
                     <div class="flex items-center mb-4">
                         <div class="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-                            <i class="fas fa-graduation-cap text-white text-xl"></i>
+                           <img src="{{ asset('images/logo.png') }}" alt="College Logo" class="h-12 w-auto rounded-lg shadow">
                         </div>
                         <div class="ml-3">
-                            <h3 class="text-lg font-bold" style="color: #3224fbff;">Department of Data Science</h3>
+                            <h3 class="text-lg font-bold" style="color: #fb7624ff;">Department of Data Science</h3>
                         </div>
                     </div>
                     <p class="text-gray-300 mb-4">
@@ -184,7 +185,7 @@
 
                 <!-- Quick Links -->
                 <div>
-                    <h4 class="text-lg font-semibold mb-4" style="color: #3224fbff;">Quick Links</h4>
+                    <h4 class="text-lg font-semibold mb-4" style="color: #fb7624ff;">Quick Links</h4>
                     <ul class="space-y-2">
                         <li><a href="{{ route('department.about') }}" class="text-gray-300 hover:text-white">About Us</a></li>
                         <li><a href="{{ route('department.programs') }}" class="text-gray-300 hover:text-white">Programs</a></li>
@@ -196,7 +197,7 @@
 
                 <!-- Contact Info -->
                 <div>
-                    <h4 class="text-lg font-semibold mb-4" style="color: #3224fbff;">Contact Info</h4>
+                    <h4 class="text-lg font-semibold mb-4" style="color: #fb7624ff;">Contact Info</h4>
                     <div class="space-y-2 text-gray-300">
                         <p><i class="fas fa-map-marker-alt mr-2"></i>G M University, Davanagere</p>
                         <p><i class="fas fa-phone mr-2"></i>+91 6364259993</p>
