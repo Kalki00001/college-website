@@ -5,7 +5,7 @@
 
 @section('content')
 <!-- Page Header -->
-<section class="bg-gradient-to-r from-blue-600 to-palepink-600/90 text-black-600 py-16">
+<section class="bg-gradient-to-r from-blue-400 to-palepink-600/90 text-black-600 py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center">
             <h1 class="text-4xl md:text-black font-bold mb-4">Faculty Profile</h1>

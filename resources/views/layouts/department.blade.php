@@ -13,16 +13,29 @@
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=inter:400,500,600,700&display=swap" rel="stylesheet" />
     
+    <!-- AOS Animation CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+
     <!-- Custom Styles -->
     <style>
         .gradient-bg {
-           background: linear-gradient(135deg, #2563eb, #9333ea);
+           background: linear-gradient(135deg, #3b82f6, #9333ea);
         }
-        0.3s body { font-family: 'Poppins', sans-serif;
-        font-size: 16px; line-height: 1.5; color: #333; }
+        body {
+        font-family: 'Orbitron', sans-serif;  /* change Orbitron to any chosen font */
+        font-size: 18px;
+        line-height: 1.5;
+        color: #e0e0e0; /* lighter text looks more hacker-style */
+        background-color: #0a0a0a; /* optional dark background */
+        }
+
 
         .card-hover {
             transition: all 0.3s ease;
@@ -37,7 +50,10 @@
         }
 
         h1,h2,h3,h4,h5,h6 {
-        color: #080808b3;}
+            font-family: 'Share Tech Mono', monospace;
+            letter-spacing: 4px;
+            color: #080808b3;
+        }
 
         .nav-link::after {
             content: '';
@@ -53,6 +69,18 @@
         .nav-link:hover::after,
         .nav-link.active::after {
             width: 100%;
+
+        /* Floating Animation for Title */
+       .hero-title {
+        animation: float 4s ease-in-out infinite;
+        }
+
+        @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-15px); }
+        100% { transform: translateY(0px); }
+        }
+
         }
     </style>
     
@@ -64,7 +92,7 @@
     <!-- Floating Logo -->
     <div class="fixed bottom-6 right-8 z-50 bg-grey/90 rounded-full shadow-2xl p-2 ring-4 ring-blue-300">
         <a href="{{ route('department.index') }}">
-            <img src="{{ asset('images/logo.png') }}" alt="College Logo" class="h-20 w-20 object-contain rounded-full cursor-pointer">
+            <img src="{{ asset('images/college logo.jpg') }}" alt="College Logo" class="h-20 w-20 object-contain rounded-full cursor-pointer">
         </a>
     </div>
 
@@ -77,7 +105,7 @@
             <!-- Logo -->
             <div class="flex items-center">
                 <a href="{{ route('department.index') }}" class="flex items-center space-x-3">
-                <img src="{{ asset('images/logo new.png') }}" alt="College Logo" class="h-12 w-auto rounded-lg shadow">
+                <img src="{{ asset('images/college logo.jpg') }}" alt="College Logo" class="h-12 w-auto rounded-lg shadow">
             <div>
                 <span class="block text-lg font-bold leading-tight" style="color: #343232dd;">Department of Data science</span>
                 <span class="block text-xs text-black-500" style="color: #050505ff;">Excellence in Education &amp; Research</span>
@@ -215,5 +243,48 @@
 
     <!-- Alpine.js -->
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <!-- Vanilla Tilt for 3D effect -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+<script>
+    VanillaTilt.init(document.querySelectorAll(".tilt"), {
+        max: 25,    // maximum tilt
+        speed: 400, // speed of tilt
+        glare: true, // optional glare effect
+        "max-glare": 0.3
+    });
+</script>
+
+<!-- AOS Animation JS -->
+<!-- AOS Animation JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      // Apply AOS to headings
+      document.querySelectorAll("h1, h2, h3, h4, h5, h6").forEach(el => {
+          if (!el.hasAttribute("data-aos")) {
+              el.setAttribute("data-aos", "fade-up");
+          }
+      });
+
+      // Apply AOS to paragraphs
+      document.querySelectorAll("p").forEach(el => {
+          if (!el.hasAttribute("data-aos")) {
+              el.setAttribute("data-aos", "fade-up");
+          }
+      });
+
+      // ✅ Now initialize AFTER attributes are added
+      AOS.init({
+          once: true,
+          duration: 1000,
+          easing: 'ease-in-out'
+      });
+  });
+</script>
+
+
+
+
 </body>
 </html>
