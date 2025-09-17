@@ -276,7 +276,7 @@
 
       // ✅ Now initialize AFTER attributes are added
       AOS.init({
-          once: true,
+          once: false,
           duration: 1000,
           easing: 'ease-in-out'
       });
